@@ -1,6 +1,6 @@
 services:
   ui:
-    image: beachcoder/external:8
+    image: beachcoder/external:9
     build:
       context: .
       dockerfile: Dockerfile
@@ -12,7 +12,7 @@ services:
       - "backend"
       
   backend:
-    image: beachcoder/internal:8
+    image: beachcoder/internal:9
     build:
       context: ../internal
       dockerfile: ../internal/Dockerfile
